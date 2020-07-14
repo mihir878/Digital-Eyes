@@ -64,5 +64,7 @@ public class SplashActivity extends Activity {
         tts = new TextToSpeech(this.getApplicationContext(), listener);
         LocalBroadcastManager.getInstance(this).registerReceiver(onNotice, new IntentFilter("Msg"));
         Log.e("dd", "dd");
+        Intent intent=new Intent(SplashActivity.this,MainActivity.class);
+        startActivity(intent);
     }
 }

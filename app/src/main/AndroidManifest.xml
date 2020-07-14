@@ -22,7 +22,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         tools:replace="android:label">
-        <activity android:name="com.google.android.gms.samples.vision.ocrreader.SplashActivity"></activity>
+        <activity android:name="com.google.android.gms.samples.vision.ocrreader.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.ReceiverActivity" />
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.ObjectDetectionActivity" />
         <activity
@@ -39,11 +45,7 @@
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity" />
 
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
